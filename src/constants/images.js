@@ -27,6 +27,9 @@ import construction from '../assets/construction.png';
 import blogging from '../assets/blogging.png';
 import hoobank from '../assets/hoobank.png';
 import resort from '../assets/resort.png';
+import python from '../assets/python.png';
+import qraphQL from '../assets/qraphQL.png';
+
 
 
 const assets = {
@@ -58,6 +61,8 @@ const assets = {
     blogging,
     construction,
     resort,
-    hoobank
+    hoobank,
+    python,
+    qraphQL
 }
 export default assets;

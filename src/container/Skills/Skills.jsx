@@ -109,6 +109,20 @@ const Skills = () => {
                                             <img src={images.firebase} alt='' />
                                         </div>
                                     </div>
+
+                                    <div className='skill_card'>
+                                        <div class="tooltip">PYTHON</div>
+                                        <div className='skill_img'>
+                                            <img src={images.python} alt='' />
+                                        </div>
+                                    </div>
+
+                                    <div className='skill_card'>
+                                        <div class="tooltip">GRAPHQL</div>
+                                        <div className='skill_img'>
+                                            <img src={images.qraphQL} alt='' />
+                                        </div>
+                                    </div>
                                 </div>
                             ) : (
                                 <div className='tools'>
