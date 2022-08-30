@@ -1,0 +1,150 @@
+.about_container {
+    width: 80%;
+    margin: 0 auto;
+
+    .about_contents {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        @media screen and (max-width: 900px) {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+    .content p {
+        width: 78%;
+        line-height: 1.7rem;
+        margin-bottom: 1rem;
+        font-size: 1.05rem;
+        color: #bbbaba;
+
+        @media screen and (max-width: 900px) {
+            width: 100%;
+        }
+
+        @media screen and (min-width : 768px) and (max-width : 1024px) {
+            font-size: 1.25rem;
+            line-height: 2rem;
+        }
+    }
+
+    .cta_btns {
+        display: flex;
+
+        button {
+            font-size: 0.9rem;
+        }
+        
+
+        // .resume {
+        //     // padding: 8px 40px;
+        //     // margin-left: 30px;
+        // }
+    
+        // .hire_me {
+        //     padding: 8px 20px;
+        // }
+
+        @media screen and (max-width: 900px) {
+            margin-top: 2rem;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        @media screen and (max-width : 968px) and (orientation: landscape) {
+            justify-content: flex-start;
+            
+            button {
+                font-size: 1.05rem;
+            }
+        }
+
+        @media screen and (min-width : 768px) and (max-width : 1024px) {
+            justify-content: flex-start;
+            
+            // button {
+            //     font-size: 1.05rem;
+            // }
+        }
+        
+    }
+
+
+    .about_img {
+        width: 50%;
+        position: relative;
+
+        .about_bg {
+            position: absolute;
+            top: 1rem;
+            right: -4rem;
+            width: 24rem;
+
+            @media screen and (max-width: 900px) {
+                width: 20rem;
+                top: 0;
+                right: -5rem;
+            }
+
+            @media screen and (max-width : 968px) and (orientation: landscape) {
+                right: 0;
+                width: 23rem;
+            }
+
+            @media screen and (min-width : 768px) and (max-width : 1024px) {
+                right: 0;
+                width: 26rem;
+            }
+
+            
+        }
+
+        img {
+            width: 17rem;
+            @media screen and (max-width: 900px) {
+                position: absolute;
+                top: 0;
+                right: -2rem;
+                width: 14.5rem;
+            }
+
+            @media screen and (max-width : 968px) and (orientation: landscape) {
+                right: 3.5rem;
+                width: 15.5rem;
+            }
+
+            @media screen and (min-width : 768px) and (max-width : 1024px) {
+                right: 3.5rem;
+                width: 18.5rem;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            margin-top: 3rem;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+    }
+}
+
+.container_head {
+
+    h2 {
+        font-size: 1.1rem;
+
+        @media screen and (min-width : 768px) and (max-width : 1024px) {
+            font-size: 1.35rem;
+        }
+    }
+
+}
+
+
+

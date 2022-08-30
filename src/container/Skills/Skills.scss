@@ -1,0 +1,192 @@
+.skills_container {
+    width: 80%;
+    margin: 9rem auto;
+    // background-color: yellow;
+
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        margin-top: 27rem;
+    }
+}
+
+.Skills {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    position: relative;
+
+    .content {
+        width: 50%;
+
+        p {
+            margin-bottom: 2rem;
+            color: #bbbaba;
+            font-size: 1.05rem;
+
+            @media screen and (min-width : 768px) and (max-width : 1024px) {
+                font-size: 1.25rem;
+            }
+        }
+
+        .skills-toggle {
+            background-color: #333744;
+            position: relative;
+            width: max-content;
+            // margin-inline: auto;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-radius: 100px;
+            box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.1);
+            z-index: 1;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                bottom: 5px;
+                width: 93px;
+                border-radius: 100px;
+                transition: 0.25s ease-in-out;
+                z-index: -1;
+            }
+
+            &.active::before {
+                left: 98px;
+                width: 94px;
+            }
+
+            .toggle-btn {
+                color: var(--white-color);
+                // font-family: var(--ff-poppins);
+                padding: 5px 25px;
+                transition: 0.25s ease-in-out;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+
+                &.active {
+                    color: black;
+                    font-weight: 550;
+                    background-color: var(--gray-color);
+                    border-radius: 10px;
+                }
+
+                @media screen and (min-width : 768px) and (max-width : 1024px) {
+                    font-size: 1.15rem;
+                    padding: 7px 25px;
+                }
+            }
+
+            @media screen and (max-width: 900px) {
+                justify-self: center;
+                align-self: center;
+            }
+
+        }
+
+        @media screen and (max-width: 900px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+
+    .skills_technologies {
+        width: 50%;
+        position: absolute;
+        right: -4rem;
+        top: 0;
+
+        @media screen and (max-width: 900px) {
+            width: 100%;
+            position: static;
+            right: 0;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+.technologies, .tools {
+    // background-color: red;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    .skill_card,
+    .tool_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        cursor: help;
+
+        .tooltip {
+            position: absolute;
+            top: -2rem;
+            width: 6rem;
+            font-size: 0.7rem;
+            background-color: var(--gray-color);
+            color: black;
+            font-weight: 550;
+            padding: 4px;
+            border-radius: 3px;
+            text-align: center;
+            opacity: 0;
+
+            &::after {
+                content: '';
+                position: absolute;
+            }
+
+            @media screen and (max-width: 900px) {
+                display: none;
+            }
+        }
+
+        &:hover .tooltip {
+            opacity: 1;
+        }
+
+        .skill_img,
+        .tool_img {
+            width: 5rem;
+            height: 5rem;
+            background-color: #333744;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // margin: 0 10px;
+
+            img {
+                width: 3rem;
+
+            }
+
+        }
+    }
+    
+    @media screen and (max-width: 900px) {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
+}
+
