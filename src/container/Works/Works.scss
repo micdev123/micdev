@@ -77,10 +77,13 @@
     .project_links {
         margin-top: 20px;
 
-        .icon {
+        .link {
             margin-right: 20px;
             font-size: 1.3rem;
-        }
+            color: var(--lightGray-color);
+
+        }   
+        
     }
 
     @media screen and (max-width: 900px) {

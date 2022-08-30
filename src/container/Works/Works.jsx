@@ -43,8 +43,13 @@ const Works = () => {
                                     <p>Firebase</p>
                                 </div>
                                 <div className='project_links'>
-                                    <FiExternalLink className='icon' />
-                                    <AiOutlineGithub className='icon' />
+                                    <a href="/" target="_blank" rel="noreferrer" className='link'>
+                                        <FiExternalLink className='icon' />
+                                    </a>
+
+                                    <a href="https://github.com/micdev123/e-commerce_project" target="_blank" rel="noreferrer" className='link'>
+                                        <AiOutlineGithub className='icon' />
+                                    </a>
                                 </div>
                             </div>
                             <div className='work_footer'>
@@ -74,8 +79,13 @@ const Works = () => {
                                     <p>Javascript</p>
                                 </div>
                                 <div className='project_links'>
-                                    <FiExternalLink className='icon' />
-                                    <AiOutlineGithub className='icon' />
+                                    <a href="/" target="_blank" rel="noreferrer" className='link'>
+                                        <FiExternalLink className='icon' />
+                                    </a>
+                                    
+                                    <a href="https://github.com/micdev123/hooBank_project" target="_blank" rel="noreferrer" className='link'>
+                                        <AiOutlineGithub className='icon' />
+                                    </a>
                                 </div>
                             </div>
                             <div className='work_footer'>
@@ -108,8 +118,13 @@ const Works = () => {
                                     <p>GSAP</p>
                                 </div>
                                 <div className='project_links'>
-                                    <FiExternalLink className='icon' />
-                                    <AiOutlineGithub className='icon' />
+                                    <a href="/" target="_blank" rel="noreferrer" className='link'>
+                                        <FiExternalLink className='icon' />
+                                    </a>
+
+                                    <a href="https://github.com/micdev123/construction_website_1.0" target="_blank" rel="noreferrer" className='link'>
+                                        <AiOutlineGithub className='icon' />
+                                    </a>
                                 </div>
                             </div>
                             <div className='work_footer'>
@@ -142,8 +157,13 @@ const Works = () => {
                                     <p>Material UI</p>
                                 </div>
                                 <div className='project_links'>
-                                    <FiExternalLink className='icon' />
-                                    <AiOutlineGithub className='icon' />
+                                    <a href="/" target="_blank" rel="noreferrer" className='link'>
+                                        <FiExternalLink className='icon' />
+                                    </a>
+
+                                    <a href="https://github.com/micdev123/blogging_project" target="_blank" rel="noreferrer" className='link'>
+                                        <AiOutlineGithub className='icon' />
+                                    </a>
                                 </div>
                             </div>
                             <div className='work_footer'>
@@ -177,8 +197,13 @@ const Works = () => {
                                     <p>MySQL</p>
                                 </div>
                                 <div className='project_links'>
-                                    <FiExternalLink className='icon' />
-                                    <AiOutlineGithub className='icon' />
+                                    <a href="/" target="_blank" rel="noreferrer" className='link'>
+                                        <FiExternalLink className='icon' />
+                                    </a>
+
+                                    <a href="https://github.com/micdev123/e-classroom-project" target="_blank" rel="noreferrer" className='link'>
+                                        <AiOutlineGithub className='icon' />
+                                    </a>
                                 </div>
                             </div>
                             <div className='work_footer'>
@@ -212,8 +237,12 @@ const Works = () => {
                                     <p>Framer Motion</p>
                                 </div>
                                 <div className='project_links'>
-                                    <FiExternalLink className='icon' />
-                                    <AiOutlineGithub className='icon' />
+                                    <a href="/" target="_blank" rel="noreferrer" className='link'>
+                                        <FiExternalLink className='icon' />
+                                    </a>
+                                    <a href="/" target="_blank" rel="noreferrer" className='link'>
+                                        <AiOutlineGithub className='icon' />
+                                    </a>
                                 </div>
                             </div>
                             <div className='work_footer'>
