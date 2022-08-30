@@ -1,20 +1,31 @@
 import React from 'react'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { FiExternalLink } from 'react-icons/fi'
-
+import { motion } from 'framer-motion';
 import { images } from '../../constants'
 import './Works.scss'
+import { MotionWrap } from '../../wrapper';
 
 const Works = () => {
     return (
-        <div className='Works_components'>
+        <div id='Projects' className='Works_components'>
             <div className='main_container'>
                 <div className='works_container'>
                     <div className='container_head'>
                         <h2>Projects | Experience</h2>
                     </div>
-                    <div className='works'>
-                        <div className='work'>
+                    <motion.div
+                        className='works'
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 0.5, delayChildren: 0.5 }}
+                    >
+                        <motion.div
+                            className='work'
+                            initial={{y: 100, opacity: 0 }}
+                            whileInView={{y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5 }}
+                        >
                             <div className='work_content'>
                                 <h2>E-commerce</h2>
                                 <p>
@@ -43,9 +54,15 @@ const Works = () => {
                                     <img src={images.e_commerce} alt='e-commerce' className='project_img' />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                         
-                        <div className='work'>
+                        <motion.div
+                            className='work'
+                            initial={{y: 100, opacity: 0 }}
+                            whileInView={{y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5 }}
+                        >
                             <div className='work_content'>
                                 <h2>HooBank Landing Page</h2>
                                 <p>
@@ -68,9 +85,15 @@ const Works = () => {
                                     <img src={images.hoobank} alt='hoo-bank' className='project_img' />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className='work'>
+                        <motion.div
+                            className='work'
+                            initial={{y: 100, opacity: 0 }}
+                            whileInView={{y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5 }}
+                        >
                             <div className='work_content'>
                                 <h2>Construction Landing Page</h2>
                                 <p>
@@ -96,9 +119,15 @@ const Works = () => {
                                     <img src={images.construction} alt='construction' className='project_img' />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className='work'>
+                        <motion.div
+                            className='work'
+                            initial={{y: 100, opacity: 0 }}
+                            whileInView={{y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5 }}
+                        >
                             <div className='work_content'>
                                 <h2>Blogging</h2>
                                 <p>
@@ -124,9 +153,15 @@ const Works = () => {
                                     <img src={images.blogging} alt='blogging' className='project_img' />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className='work'>
+                        <motion.div
+                            className='work'
+                            initial={{y: 100, opacity: 0 }}
+                            whileInView={{y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5 }}
+                        >
                             <div className='work_content'>
                                 <h2>E-Classroom</h2>
                                 <p>
@@ -153,9 +188,15 @@ const Works = () => {
                                     <img src={images.e_classroom} alt='e-classroom' className='project_img' />
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        <div className='work'>
+                        <motion.div
+                            className='work'
+                            initial={{y: 100, opacity: 0 }}
+                            whileInView={{y: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5 }}
+                        >
                             <div className='work_content'>
                                 <h2>The Resort</h2>
                                 <p>
@@ -182,12 +223,12 @@ const Works = () => {
                                     <img src={images.resort} alt='resort' className='project_img' />
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Works
+export default MotionWrap(Works, 'app__works')

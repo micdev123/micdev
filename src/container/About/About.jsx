@@ -1,18 +1,25 @@
 import React from 'react'
 import { HiDownload } from 'react-icons/hi'
+import { motion } from 'framer-motion';
 
+import { MotionWrap } from '../../wrapper';
 import { images } from '../../constants'
 import './About.scss';
 
+
 const About = () => {
     return (
-        <div className='About_Component'>
+        <div id='About' className='About_Component'>
             <div className='main_container'>
                 <div className='about_container'>
                     <div className='container_head'>
                         <h2>About Me</h2>
                     </div>
-                    <div className='about_contents'>
+                    <motion.div
+                        className='about_contents'
+                        whileInView={{ opacity: [0, 1] }}
+                        transition={{ duration: 0.5, type: 'tween' }}
+                    >
                         <div className='content'>
                             <p>
                                 Hi! I'm Michael, I do web development, mostly Frontend but also Fullstack and design as well. I'm from Sierra Leone the western part of Africa and a third-year student pursuing Software Engineering with Multimedia Technology at the Limkokwing University Of Creative Technology.
@@ -32,11 +39,11 @@ const About = () => {
                             <img src={images.about_img} alt='about-bg' className='about_bg' />
                             <img src={images.michael}  alt='about-img' />
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
     )
 }
 
-export default About
+export default MotionWrap(About, 'app__about')

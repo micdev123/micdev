@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 
+import { MotionWrap } from '../../wrapper';
 import { images } from '../../constants'
 import './Skills.scss'
 
 const Skills = () => {
     const [toggle, setToggle] = useState(true);
     return (
-        <div className='Skills_Component'>
+        <div id='Skills' className='Skills_Component'>
             <div className='main_container'>
                 <div className='skills_container'>
                     <div className='container_head'>
@@ -178,4 +179,4 @@ const Skills = () => {
     )
 }
 
-export default Skills
+export default MotionWrap(Skills, 'app__skill')

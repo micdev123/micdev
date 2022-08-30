@@ -2,6 +2,7 @@
     width: 80%;
     margin: 9rem auto;
     // background-color: yellow;
+    padding: 3rem 0;
 
 
     @media screen and (max-width: 900px) {
@@ -128,6 +129,7 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
+    transition: all 0.3s ease;
 
     .skill_card,
     .tool_card {
@@ -136,6 +138,7 @@
         align-items: center;
         position: relative;
         cursor: help;
+        transition: all 0.3s ease;
 
         .tooltip {
             position: absolute;
