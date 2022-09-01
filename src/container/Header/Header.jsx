@@ -67,7 +67,7 @@ const Header = () => {
                             Front-End Software Engineer.
                         </motion.h1>
                         <motion.p className='info' variants={item}>
-                            I'm passionate about delivering solid, crafted, performing, beautiful, and quality front-end products with great user experiences.
+                            I'm passionate about delivering solid, crafted, performing, beautiful, functional, and quality front-end products with great user experiences.
                         </motion.p>
                         <motion.p className='info' variants={item}>
                             Occasionally, I do Design and Fullstack stuff as well.
