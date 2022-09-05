@@ -29,40 +29,12 @@ import hoobank from '../assets/hoobank.png';
 import resort from '../assets/resort.png';
 import python from '../assets/python.png';
 import qraphQL from '../assets/qraphQL.png';
+import expenses_chart from '../assets/expenses-chart.jpg';
 
 
 
 const assets = {
-    michael,
-    about_img,
-    html5,
-    css3,
-    javascript,
-    photoshop,
-    php,
-    mysql,
-    mongodb,
-    git,
-    firebase,
-    react,
-    sanity,
-    sass,
-    vscode,
-    npm,
-    command,
-    tailwind_css,
-    audition,
-    adobe_xd,
-    node,
-    express,
-    illustrator,
-    e_classroom,
-    e_commerce,
-    blogging,
-    construction,
-    resort,
-    hoobank,
-    python,
-    qraphQL
+    michael, about_img, html5, css3, javascript, photoshop, php, mysql,mongodb, git, firebase, react, sanity, sass, vscode, npm, command,tailwind_css, audition, adobe_xd, node, express, illustrator,e_classroom, e_commerce, blogging, construction, resort, hoobank,
+    python, qraphQL, expenses_chart
 }
 export default assets;

@@ -18,107 +18,107 @@ const Skills = () => {
                             <p>
                                 So far, here are a few of the skills and tools I've been working with to turn project ideas into reality.
                             </p>
-                            <div class="skills-toggle" data-toggle-box>
-                                <button class={`toggle-btn ${toggle ? 'active' : ''}`} onClick={() => setToggle(true)}>Skills</button>
+                            <div className="skills-toggle" data-toggle-box>
+                                <button className={`toggle-btn ${toggle ? 'active' : ''}`} onClick={() => setToggle(true)}>Skills</button>
 
-                                <button class={`toggle-btn ${!toggle ? 'active' : ''}`} onClick={() => setToggle(!toggle)}>Tools</button>
+                                <button className={`toggle-btn ${!toggle ? 'active' : ''}`} onClick={() => setToggle(!toggle)}>Tools</button>
                             </div>
                         </div>
                         <div className='skills_technologies'>
                             {toggle ? (
                                 <div className='technologies'>
                                     <div className='skill_card'>
-                                        <div class="tooltip">HTML5</div>
+                                        <div className="tooltip">HTML5</div>
                                         <div className='skill_img'>
                                             <img src={images.html5} alt='' />
                                         </div>
                                     </div>
                                     <div className='skill_card'>
-                                        <div class="tooltip">CSS3</div>
+                                        <div className="tooltip">CSS3</div>
                                         <div className='skill_img'>
                                             <img src={images.css3} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='skill_card'>
-                                        <div class="tooltip">JAVASCRIPT</div>
+                                        <div className="tooltip">JAVASCRIPT</div>
                                         <div className='skill_img'>
                                             <img src={images.javascript} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='skill_card'>
-                                        <div class="tooltip">REACT JS</div>
+                                        <div className="tooltip">REACT JS</div>
                                         <div className='skill_img'>
                                             <img src={images.react} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='skill_card'>
-                                        <div class="tooltip">PHP</div>
+                                        <div className="tooltip">PHP</div>
                                         <div className='skill_img'>
                                             <img src={images.php} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='skill_card'>
-                                        <div class="tooltip">NODE JS</div>
+                                        <div className="tooltip">NODE JS</div>
                                         <div className='skill_img'>
                                             <img src={images.node} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='skill_card'>
-                                        <div class="tooltip">TAILWIND CSS</div>
+                                        <div className="tooltip">TAILWIND CSS</div>
                                         <div className='skill_img'>
                                             <img src={images.tailwind_css} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='skill_card'>
-                                        <div class="tooltip">MONGODB</div>
+                                        <div className="tooltip">MONGODB</div>
                                         <div className='skill_img'>
                                             <img src={images.mongodb} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='skill_card'>
-                                        <div class="tooltip">MYQSL</div>
+                                        <div className="tooltip">MYQSL</div>
                                         <div className='skill_img'>
                                             <img src={images.mysql} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='skill_card'>
-                                        <div class="tooltip">SANITY</div>
+                                        <div className="tooltip">SANITY</div>
                                         <div className='skill_img'>
                                             <img src={images.sanity} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='skill_card'>
-                                        <div class="tooltip">SASS</div>
+                                        <div className="tooltip">SASS</div>
                                         <div className='skill_img'>
                                             <img src={images.sass} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='skill_card'>
-                                        <div class="tooltip">FIREBASE</div>
+                                        <div className="tooltip">FIREBASE</div>
                                         <div className='skill_img'>
                                             <img src={images.firebase} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='skill_card'>
-                                        <div class="tooltip">PYTHON</div>
+                                        <div className="tooltip">PYTHON</div>
                                         <div className='skill_img'>
                                             <img src={images.python} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='skill_card'>
-                                        <div class="tooltip">GRAPHQL</div>
+                                        <div className="tooltip">GRAPHQL</div>
                                         <div className='skill_img'>
                                             <img src={images.qraphQL} alt='' />
                                         </div>
@@ -127,56 +127,56 @@ const Skills = () => {
                             ) : (
                                 <div className='tools'>
                                     <div className='tool_card'>
-                                        <div class="tooltip">VSCODE</div>
+                                        <div className="tooltip">VSCODE</div>
                                         <div className='tool_img'>
                                             <img src={images.vscode} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='tool_card'>
-                                        <div class="tooltip">PHOTOSHOP</div>
+                                        <div className="tooltip">PHOTOSHOP</div>
                                         <div className='tool_img'>
                                             <img src={images.photoshop} alt='' />
                                         </div>
                                     </div>
                                         
                                     <div className='tool_card'>
-                                        <div class="tooltip">VSCODE</div>
+                                        <div className="tooltip">VSCODE</div>
                                         <div className='tool_img'>
                                             <img src={images.adobe_xd} alt='' />
                                         </div>
                                     </div>
                                         
                                     <div className='tool_card'>
-                                        <div class="tooltip">VSCODE</div>
+                                        <div className="tooltip">VSCODE</div>
                                         <div className='tool_img'>
                                             <img src={images.command} alt='' />
                                         </div>
                                     </div>
                                         
                                     <div className='tool_card'>
-                                        <div class="tooltip">VSCODE</div>
+                                        <div className="tooltip">VSCODE</div>
                                         <div className='tool_img'>
                                             <img src={images.git} alt='' />
                                         </div>
                                     </div>
                                         
                                     <div className='tool_card'>
-                                        <div class="tooltip">VSCODE</div>
+                                        <div className="tooltip">VSCODE</div>
                                         <div className='tool_img'>
                                             <img src={images.illustrator} alt='' />
                                         </div>
                                     </div>
                                         
                                     <div className='tool_card'>
-                                        <div class="tooltip">VSCODE</div>
+                                        <div className="tooltip">VSCODE</div>
                                         <div className='tool_img'>
                                             <img src={images.npm} alt='' />
                                         </div>
                                     </div>
 
                                     <div className='tool_card'>
-                                        <div class="tooltip">VSCODE</div>  
+                                        <div className="tooltip">VSCODE</div>  
                                         <div className='tool_img'>
                                             <img src={images.audition} alt='' />
                                         </div>

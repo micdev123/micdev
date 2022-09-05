@@ -52,10 +52,12 @@ const Works = () => {
                             </div>
                             <div className='work_footer'>
                                 <h2 className='small_Screen'>Construction Landing Page</h2>
-                                <div className='work_img'>
-                                    <div className='overlay'></div>
-                                    <img src={images.construction} alt='construction' className='project_img' />
-                                </div>
+                                <a href="https://micdev123.github.io/construction_website_1.0/" target="_blank" rel="noreferrer">
+                                    <div className='work_img'>
+                                        <div className='overlay'></div>
+                                        <img src={images.construction} alt='construction' className='project_img' />
+                                    </div>
+                                </a>
                             </div>
                         </motion.div>
 
@@ -94,10 +96,12 @@ const Works = () => {
                             </div>
                             <div className='work_footer'>
                                 <h2 className='small_Screen'>E-commerce</h2>
-                                <div className='work_img'>
-                                    <div className='overlay'></div>
-                                    <img src={images.e_commerce} alt='e-commerce' className='project_img' />
-                                </div>
+                                <a href="https://e-commerce--mern.vercel.app/" target="_blank" rel="noreferrer">
+                                    <div className='work_img'>
+                                        <div className='overlay'></div>
+                                        <img src={images.e_commerce} alt='e-commerce' className='project_img' />
+                                    </div>
+                                </a>
                             </div>
                         </motion.div>
                         
@@ -130,10 +134,12 @@ const Works = () => {
                             </div>
                             <div className='work_footer'>
                                 <h2 className='small_Screen'>HooBank Landing Page</h2>
-                                <div className='work_img'>
-                                    <div className='overlay'></div>
-                                    <img src={images.hoobank} alt='hoo-bank' className='project_img' />
-                                </div>
+                                <a href="https://micdev123.github.io/hooBank_project/" target="_blank" rel="noreferrer">
+                                    <div className='work_img'>
+                                        <div className='overlay'></div>
+                                        <img src={images.hoobank} alt='hoo-bank' className='project_img' />
+                                    </div>
+                                </a>
                             </div>
                         </motion.div>
 
@@ -170,10 +176,12 @@ const Works = () => {
                             </div>
                             <div className='work_footer'>
                                 <h2 className='small_Screen'>Blogging</h2>
-                                <div className='work_img'>
-                                    <div className='overlay'></div>
-                                    <img src={images.blogging} alt='blogging' className='project_img' />
-                                </div>
+                                 <a href="https://blogging-mern.vercel.app/" target="_blank" rel="noreferrer">
+                                    <div className='work_img'>
+                                        <div className='overlay'></div>
+                                        <img src={images.blogging} alt='blogging' className='project_img' />
+                                    </div>
+                                </a>
                             </div>
                         </motion.div>
 
@@ -210,10 +218,12 @@ const Works = () => {
                             </div>
                             <div className='work_footer'>
                                 <h2 className='small_Screen'>E-Classroom</h2>
-                                <div className='work_img'>
-                                    <div className='overlay'></div>
-                                    <img src={images.e_classroom} alt='e-classroom' className='project_img' />
-                                </div>
+                                <Link to='/comingSoon'>
+                                    <div className='work_img'>
+                                        <div className='overlay'></div>
+                                        <img src={images.e_classroom} alt='e-classroom' className='project_img' />
+                                    </div>
+                                </Link>
                             </div>
                         </motion.div>
 
@@ -249,10 +259,12 @@ const Works = () => {
                             </div>
                             <div className='work_footer'>
                                 <h2 className='small_Screen'>The Resort</h2>
-                                <div className='work_img'>
-                                    <div className='overlay'></div>
-                                    <img src={images.resort} alt='resort' className='project_img' />
-                                </div>
+                                <Link to='/comingSoon'>
+                                    <div className='work_img'>
+                                        <div className='overlay'></div>
+                                        <img src={images.resort} alt='resort' className='project_img' />
+                                    </div>
+                                </Link>
                             </div>
                         </motion.div>
                     </motion.div>

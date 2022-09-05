@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { About, Header, Skills,  Works, Contact } from '../../container';
+import { About, Header, Skills,  Works, Challenges, Contact } from '../../container';
 
 
 function Home() {
@@ -10,6 +10,7 @@ function Home() {
             <About />
             <Skills />
             <Works />
+            <Challenges />
             <Contact />
         </div>
     )
