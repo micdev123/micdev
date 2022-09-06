@@ -71,7 +71,7 @@ const Works = () => {
                                 <p>
                                     Is a full-stack web-based application.
                                     An electronic learning platform similar to google classroom, it caters for university purposes.
-                                    Here the admin is responsible form adding, editing or removing either student or lecturer, create
+                                    Here the admin is responsible for adding, editing or removing either student or lecturer, create
                                     classroom, assign student or lecturer to a class, create, and assign module to student or lecturer etc.
                                 </p>
                                 <div className='stack'>
@@ -112,7 +112,7 @@ const Works = () => {
                                 <h2>The Resort</h2>
                                 <p>
                                     Is a full-stack web-based application.
-                                    It allow users to choose from a varieties of rooms and then book a room if available based on the duration the user specified.
+                                    It allows user to choose from a varieties of rooms and then book a room if available, based on the duration the user specified.
                                 </p>
                                 <div className='stack'>
                                     <p>React</p>
