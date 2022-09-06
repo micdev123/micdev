@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 import { MotionWrap } from '../../wrapper';
-import { images } from '../../constants'
 import './Skills.scss'
 import data from '../../data';
 
