@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { About, Header, Skills,  Works, Challenges, Contact } from '../../container';
+import { About, Header, Skills, Works, Challenges, Contact } from '../../container';
 
 
 function Home() {

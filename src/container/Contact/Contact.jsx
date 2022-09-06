@@ -5,7 +5,7 @@ import './Contact.scss';
 
 const Contact = () => {
     return (
-        <div id='Contact' className='Contact_Component'>
+        <div id='Contacts' className='Contact_Component'>
             <div className='main_container'>
                 <div className='contact_container'>
                     <h2>Get In Touch</h2>

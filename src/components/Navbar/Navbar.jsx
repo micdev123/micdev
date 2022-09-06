@@ -59,11 +59,16 @@ const Navbar = () => {
                     initial="hidden"
                     animate="show"
                 >
-                    {['About', 'Skills', 'Projects', 'Contact', 'Hire me today'].map((item) => (
+                    {['About', 'Skills', 'Projects', 'Contacts'].map((item) => (
                         <motion.li className="nav_link" key={`link-${item}`} variants={items}>
                             <a href={`#${item}`}>{item}</a>
                         </motion.li>
                     ))}
+                    <motion.li className="nav_link" variants={items}>
+                        <a target="_blank" rel="noreferrer" href='mailto:michlawbang123@gmail.com'>
+                            Hire me today
+                        </a>
+                    </motion.li>
                 </motion.ul>
 
                 <div className="navbar_menu">

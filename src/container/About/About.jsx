@@ -28,11 +28,14 @@ const About = () => {
                                 I enjoy the process of turning ideas into reality. In addition, I'm always curious about learning new skills in the essence of delivering a quality website that is conversion focus & user-friendly. I like collaboration in the essence of providing an excellent outcome.
                             </p>
                             <div className='cta_btns'>
-                                <button className='hire_me'>Let's talk</button>
-                                <div>
+                                <a href='#Contacts' className='hire_me' id='Contact'>
+                                    Let's talk
+                                </a>
+
+                                <a target="_blank" rel="noreferrer" href='https://micdev123.github.io/resume/' className='resume'>
                                     <HiDownload className='icon' />
-                                    <button className='resume'>Download resume</button>
-                                </div>
+                                    Download resume
+                                </a>
                             </div>
                         </div>
                         <div className='about_img'>

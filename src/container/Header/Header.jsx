@@ -77,11 +77,15 @@ const Header = () => {
                         </motion.p>
 
                         <motion.div className='cta_btns' variants={item}>
-                            <button className='hire_me'>Let's talk</button>
-                            <div>
+                            
+                            <a href='#Contacts' className='hire_me' id='Contact'>
+                                Let's talk
+                            </a>
+
+                            <a target="_blank" rel="noreferrer" href='https://micdev123.github.io/resume/' className='resume'>
                                 <HiDownload className='icon' />
-                                <button className='resume'>Download resume</button>
-                            </div>
+                                Download resume
+                            </a>
                         </motion.div>
                     </motion.div>
                 </div>

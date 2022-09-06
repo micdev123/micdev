@@ -153,12 +153,14 @@
     display: flex;
     align-items: center;
 
-    button {
+    a {
         border: none;
         font-size: 1rem;
         font-weight: 500;
         border-radius: 3px;
         cursor: pointer;
+        text-decoration: none;
+        outline: none;
     }
 
     div {
@@ -176,6 +178,9 @@
         background-color: transparent;
         color: var(--gray-color);
         // padding: 8px 50px;
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
     }
 
     .hire_me {
