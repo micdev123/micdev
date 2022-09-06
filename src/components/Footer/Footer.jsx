@@ -6,7 +6,8 @@ const Footer = () => {
     return (
         <div className='Footer_Component'>
             <div className='footer_container'>
-                <p>&copy; Designed & Built by Michael L Bangura ~ Mic__Dev</p>
+                <p>&copy; Designed & Built by</p>
+                <p>Michael L Bangura ~ Mic__Dev</p>
             </div>
         </div>
     )

@@ -5,7 +5,8 @@
 
     @media screen and (max-width: 900px) {
         width: 100%;
-        margin-top: 3rem;
+        margin: 1rem 0 0 0;
+        padding: 0;
     }
 
 }
@@ -26,7 +27,7 @@
         color: var(--lightGray-color);
         font-weight: 550;
         margin-bottom: 10px;
-        font-size: 1.5rem;
+        font-size: 1.35rem;
 
         @media screen and (max-width: 900px) {
             display: none;
@@ -104,7 +105,7 @@
             color: var(--lightGray-color);
             font-weight: 550;
             margin-bottom: 20px;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
         }
 
             @media screen and (min-width : 768px) and (max-width : 1024px) {

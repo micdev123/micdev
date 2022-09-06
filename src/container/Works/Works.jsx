@@ -6,6 +6,7 @@ import { images } from '../../constants'
 import './Works.scss'
 import { MotionWrap } from '../../wrapper';
 import { Link } from 'react-router-dom';
+import data from '../../data';
 
 const Works = () => {
     return (
@@ -20,170 +21,43 @@ const Works = () => {
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delayChildren: 0.5 }}
                     >
-                        <motion.div
-                            className='work'
-                            initial={{y: 100, opacity: 0 }}
-                            whileInView={{y: 0, opacity: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <div className='work_content'>
-                                <h2>Construction Landing Page</h2>
-                                <p>
-                                    Is a landing page that gives detailed information about the company.
-                                    This application is also e-commerce oriented because it serves as a sales platform where users | customer can also
-                                    purchase building items.
-                                </p>
-                                <div className='stack'>
-                                    <p>HTML5</p>
-                                    <p>CSS3</p>
-                                    <p>Javascript</p>
-                                    <p>GSAP</p>
-                                </div>
-                                <div className='project_links'>
-                                    <a href="https://micdev123.github.io/construction_website_1.0/" target="_blank" rel="noreferrer" className='link'>
-                                        <FiExternalLink className='icon' />
-                                    </a>
-
-                                    <a href="https://github.com/micdev123/construction_website_1.0" target="_blank" rel="noreferrer" className='link'>
-                                        <AiOutlineGithub className='icon' />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className='work_footer'>
-                                <h2 className='small_Screen'>Construction Landing Page</h2>
-                                <a href="https://micdev123.github.io/construction_website_1.0/" target="_blank" rel="noreferrer">
-                                    <div className='work_img'>
-                                        <div className='overlay'></div>
-                                        <img src={images.construction} alt='construction' className='project_img' />
+                        {data.works.map((work) => (
+                            <motion.div
+                                className='work'
+                                initial={{y: 100, opacity: 0 }}
+                                whileInView={{y: 0, opacity: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5 }}
+                            >
+                                <div className='work_content'>
+                                    <h2>{work.title}</h2>
+                                    <p> {work.desc}</p>
+                                    <div className='stack'>
+                                        {work.stacks.map((stack) => (
+                                            <p>{stack}</p>
+                                        ))}
                                     </div>
-                                </a>
-                            </div>
-                        </motion.div>
+                                    <div className='project_links'>
+                                        <a href={work.demoLink} target="_blank" rel="noreferrer" className='link'>
+                                            <FiExternalLink className='icon' />
+                                        </a>
 
-                        <motion.div
-                            className='work'
-                            initial={{y: 100, opacity: 0 }}
-                            whileInView={{y: 0, opacity: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <div className='work_content'>
-                                <h2>E-commerce</h2>
-                                <p>
-                                    Is a full-stack web based application. This online e-commerce platform provides users with list of products allowing them to make order, view their order history or delete their order. 
-                                </p>
-                                <p>
-                                    This application also have an admin panel through which admin can create more products, edit or delete a product, view orders and marked them delivered after been paid for and delivered to user.
-                                </p>
-                                <div className='stack'>
-                                    <p>React</p>
-                                    <p>CSS3</p>
-                                    <p>Express</p>
-                                    <p>MongoDB</p>
-                                    <p>Material UI</p>
-                                    <p>Firebase</p>
-                                </div>
-                                <div className='project_links'>
-                                    <a href="https://e-commerce--mern.vercel.app/" target="_blank" rel="noreferrer" className='link'>
-                                        <FiExternalLink className='icon' />
-                                    </a>
-
-                                    <a href="https://github.com/micdev123/e-commerce_project" target="_blank" rel="noreferrer" className='link'>
-                                        <AiOutlineGithub className='icon' />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className='work_footer'>
-                                <h2 className='small_Screen'>E-commerce</h2>
-                                <a href="https://e-commerce--mern.vercel.app/" target="_blank" rel="noreferrer">
-                                    <div className='work_img'>
-                                        <div className='overlay'></div>
-                                        <img src={images.e_commerce} alt='e-commerce' className='project_img' />
+                                        <a href={work.gitHubLink} target="_blank" rel="noreferrer" className='link'>
+                                            <AiOutlineGithub className='icon' />
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
-                        </motion.div>
-                        
-                        <motion.div
-                            className='work'
-                            initial={{y: 100, opacity: 0 }}
-                            whileInView={{y: 0, opacity: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <div className='work_content'>
-                                <h2>HooBank Landing Page</h2>
-                                <p>
-                                    Is the next generation payment method. A landing page that gives detailed information about the application. 
-                                </p>
-                                <div className='stack'>
-                                    <p>HTML5</p>
-                                    <p>Tailwind CSS</p>
-                                    <p>Javascript</p>
                                 </div>
-                                <div className='project_links'>
-                                    <a href="https://micdev123.github.io/hooBank_project/" target="_blank" rel="noreferrer" className='link'>
-                                        <FiExternalLink className='icon' />
-                                    </a>
-                                    
-                                    <a href="https://github.com/micdev123/hooBank_project" target="_blank" rel="noreferrer" className='link'>
-                                        <AiOutlineGithub className='icon' />
+                                <div className='work_footer'>
+                                    <h2 className='small_Screen'>{work.title}</h2>
+                                    <a href={work.demoLink} target="_blank" rel="noreferrer">
+                                        <div className='work_img'>
+                                            <div className='overlay'></div>
+                                            <img src={work.img} alt='construction' className='project_img' />
+                                        </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div className='work_footer'>
-                                <h2 className='small_Screen'>HooBank Landing Page</h2>
-                                <a href="https://micdev123.github.io/hooBank_project/" target="_blank" rel="noreferrer">
-                                    <div className='work_img'>
-                                        <div className='overlay'></div>
-                                        <img src={images.hoobank} alt='hoo-bank' className='project_img' />
-                                    </div>
-                                </a>
-                            </div>
-                        </motion.div>
-
-                        <motion.div
-                            className='work'
-                            initial={{y: 100, opacity: 0 }}
-                            whileInView={{y: 0, opacity: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <div className='work_content'>
-                                <h2>Blogging</h2>
-                                <p>
-                                    Is a full-stack web-based application where users can read, like, comment on a post, write, edit, or delete own post.
-                                    It functionality is similar to other blogging platform like Hashnode, Medium, DEV, but simple in design and easy to navigate.
-                                </p>
-                                <div className='stack'>
-                                    <p>React</p>
-                                    <p>CSS3</p>
-                                    <p>Express</p>
-                                    <p>MongoDB</p>
-                                    <p>Material UI</p>
-                                    <p>Firebase</p>
-                                </div>
-                                <div className='project_links'>
-                                    <a href="https://blogging-mern.vercel.app/" target="_blank" rel="noreferrer" className='link'>
-                                        <FiExternalLink className='icon' />
-                                    </a>
-
-                                    <a href="https://github.com/micdev123/blogging_project" target="_blank" rel="noreferrer" className='link'>
-                                        <AiOutlineGithub className='icon' />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className='work_footer'>
-                                <h2 className='small_Screen'>Blogging</h2>
-                                 <a href="https://blogging-mern.vercel.app/" target="_blank" rel="noreferrer">
-                                    <div className='work_img'>
-                                        <div className='overlay'></div>
-                                        <img src={images.blogging} alt='blogging' className='project_img' />
-                                    </div>
-                                </a>
-                            </div>
-                        </motion.div>
+                            </motion.div>
+                        ))}
 
                         <motion.div
                             className='work'
@@ -242,7 +116,7 @@ const Works = () => {
                                 </p>
                                 <div className='stack'>
                                     <p>React</p>
-                                    <p>Tailwind CSS</p>
+                                    <p>Sass</p>
                                     <p>Express</p>
                                     <p>Sanity.io</p>
                                     <p>GraphQL</p>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { MotionWrap } from '../../wrapper';
 
 import './Contact.scss';
 
@@ -20,4 +21,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default MotionWrap(Contact, 'app__contact')

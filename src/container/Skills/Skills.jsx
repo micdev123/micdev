@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { MotionWrap } from '../../wrapper';
 import { images } from '../../constants'
 import './Skills.scss'
+import data from '../../data';
 
 const Skills = () => {
     const [toggle, setToggle] = useState(true);
@@ -27,160 +28,26 @@ const Skills = () => {
                         <div className='skills_technologies'>
                             {toggle ? (
                                 <div className='technologies'>
-                                    <div className='skill_card'>
-                                        <div className="tooltip">HTML5</div>
-                                        <div className='skill_img'>
-                                            <img src={images.html5} alt='' />
+                                    {data?.skills.map((skill) => (
+                                        <div className='skill_card'>
+                                            <div className="tooltip">{skill.name}</div>
+                                            <div className='skill_img'>
+                                                <img src={skill.img} alt='' />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className='skill_card'>
-                                        <div className="tooltip">CSS3</div>
-                                        <div className='skill_img'>
-                                            <img src={images.css3} alt='' />
-                                        </div>
-                                    </div>
-
-                                    <div className='skill_card'>
-                                        <div className="tooltip">JAVASCRIPT</div>
-                                        <div className='skill_img'>
-                                            <img src={images.javascript} alt='' />
-                                        </div>
-                                    </div>
-
-                                    <div className='skill_card'>
-                                        <div className="tooltip">REACT JS</div>
-                                        <div className='skill_img'>
-                                            <img src={images.react} alt='' />
-                                        </div>
-                                    </div>
-
-                                    <div className='skill_card'>
-                                        <div className="tooltip">PHP</div>
-                                        <div className='skill_img'>
-                                            <img src={images.php} alt='' />
-                                        </div>
-                                    </div>
-
-                                    <div className='skill_card'>
-                                        <div className="tooltip">NODE JS</div>
-                                        <div className='skill_img'>
-                                            <img src={images.node} alt='' />
-                                        </div>
-                                    </div>
-
-                                    <div className='skill_card'>
-                                        <div className="tooltip">TAILWIND CSS</div>
-                                        <div className='skill_img'>
-                                            <img src={images.tailwind_css} alt='' />
-                                        </div>
-                                    </div>
-
-                                    <div className='skill_card'>
-                                        <div className="tooltip">MONGODB</div>
-                                        <div className='skill_img'>
-                                            <img src={images.mongodb} alt='' />
-                                        </div>
-                                    </div>
-
-                                    <div className='skill_card'>
-                                        <div className="tooltip">MYQSL</div>
-                                        <div className='skill_img'>
-                                            <img src={images.mysql} alt='' />
-                                        </div>
-                                    </div>
-
-                                    <div className='skill_card'>
-                                        <div className="tooltip">SANITY</div>
-                                        <div className='skill_img'>
-                                            <img src={images.sanity} alt='' />
-                                        </div>
-                                    </div>
-
-                                    <div className='skill_card'>
-                                        <div className="tooltip">SASS</div>
-                                        <div className='skill_img'>
-                                            <img src={images.sass} alt='' />
-                                        </div>
-                                    </div>
-
-                                    <div className='skill_card'>
-                                        <div className="tooltip">FIREBASE</div>
-                                        <div className='skill_img'>
-                                            <img src={images.firebase} alt='' />
-                                        </div>
-                                    </div>
-
-                                    <div className='skill_card'>
-                                        <div className="tooltip">PYTHON</div>
-                                        <div className='skill_img'>
-                                            <img src={images.python} alt='' />
-                                        </div>
-                                    </div>
-
-                                    <div className='skill_card'>
-                                        <div className="tooltip">GRAPHQL</div>
-                                        <div className='skill_img'>
-                                            <img src={images.qraphQL} alt='' />
-                                        </div>
-                                    </div>
+                                    ))}
+                                    
                                 </div>
                             ) : (
                                 <div className='tools'>
+                                    {data?.tools.map((tool) => (
                                     <div className='tool_card'>
-                                        <div className="tooltip">VSCODE</div>
+                                            <div className="tooltip">{tool.name}</div>
                                         <div className='tool_img'>
-                                            <img src={images.vscode} alt='' />
+                                            <img src={tool.img} alt='' />
                                         </div>
                                     </div>
-
-                                    <div className='tool_card'>
-                                        <div className="tooltip">PHOTOSHOP</div>
-                                        <div className='tool_img'>
-                                            <img src={images.photoshop} alt='' />
-                                        </div>
-                                    </div>
-                                        
-                                    <div className='tool_card'>
-                                        <div className="tooltip">VSCODE</div>
-                                        <div className='tool_img'>
-                                            <img src={images.adobe_xd} alt='' />
-                                        </div>
-                                    </div>
-                                        
-                                    <div className='tool_card'>
-                                        <div className="tooltip">VSCODE</div>
-                                        <div className='tool_img'>
-                                            <img src={images.command} alt='' />
-                                        </div>
-                                    </div>
-                                        
-                                    <div className='tool_card'>
-                                        <div className="tooltip">VSCODE</div>
-                                        <div className='tool_img'>
-                                            <img src={images.git} alt='' />
-                                        </div>
-                                    </div>
-                                        
-                                    <div className='tool_card'>
-                                        <div className="tooltip">VSCODE</div>
-                                        <div className='tool_img'>
-                                            <img src={images.illustrator} alt='' />
-                                        </div>
-                                    </div>
-                                        
-                                    <div className='tool_card'>
-                                        <div className="tooltip">VSCODE</div>
-                                        <div className='tool_img'>
-                                            <img src={images.npm} alt='' />
-                                        </div>
-                                    </div>
-
-                                    <div className='tool_card'>
-                                        <div className="tooltip">VSCODE</div>  
-                                        <div className='tool_img'>
-                                            <img src={images.audition} alt='' />
-                                        </div>
-                                    </div>    
+                                    ))}   
                                 </div>    
                             )}
                             

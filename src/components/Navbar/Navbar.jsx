@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { CgMenuHotdog } from 'react-icons/cg'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 import { motion } from 'framer-motion';
@@ -21,9 +21,29 @@ const Navbar = () => {
         hidden: { opacity: 0 },
         show: { opacity: 1 }
     }
+
     const [toggle, setToggle] = useState(false);
+
+    const [background, setBackground] = useState(false);
+    const changeNavBackground = () => {
+        if (window.scrollY > 90) {
+            setBackground(true)
+        }
+        else {
+            setBackground(false);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNavBackground)
+
+        return () => {
+            window.removeEventListener('scroll', changeNavBackground)
+        }
+    }, [])
+    
     return (
-        <div className='navbar_component'>
+        <div className={background ? 'navbar_component scroll_nav_bg': 'navbar_component'}>
             <nav className='navbar'>
                 <motion.div
                     className='navbar_logo'
