@@ -107,7 +107,7 @@ const data = {
         {
             title: "E-commerce",
             desc: `Is a full-stack web based application. This online e-commerce platform provides users with list of products allowing them to make order, view their order history or delete their order.
-            This application also have an admin panel through which admin can create more products, edit or delete a product, view orders and mark them deliver after been paid for and delivered to user.`,
+            This application also has an admin panel through which admin can create more products, edit or delete a product, view orders and mark them deliver after been paid for and delivered to user.`,
             stacks: ['React', 'CSS3', 'Express', 'MongoDB', 'Material UI', 'Firebase'],
             demoLink: "https://e-commerce--mern.vercel.app/",
             gitHubLink: "https://github.com/micdev123/e-commerce_project",
