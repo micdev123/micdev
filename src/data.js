@@ -98,7 +98,7 @@ const data = {
     works: [
         {
             title: "Construction Landing Page",
-            desc: `Is a landing page that gives detailed information about the company. This application is also e-commerce oriented because it serves as a sales platform where users | customers can also purchase building items.`,
+            desc: `Is a landing page that gives detailed information about the company. This application is also e-commerce oriented because it serves as a sales platform where users and customers can also purchase building items.`,
             stacks: ['HTML5', 'CSS3', 'Javascript', 'GSAP'],
             demoLink: "https://micdev123.github.io/construction_website_1.0/",
             gitHubLink: "https://github.com/micdev123/construction_website_1.0",
@@ -106,8 +106,8 @@ const data = {
         },
         {
             title: "E-commerce",
-            desc: `Is a full-stack web based application. This online e-commerce platform provides users with list of products allowing them to make order, view their order history or delete their order.
-            This application also has an admin panel through which admin can create more products, edit or delete a product, view orders and mark them deliver after been paid for and delivered to user.`,
+            desc: `Is a full-stack web-based application. This online e-commerce platform provides users with a list of products allowing them to make orders, view their order history, or delete their orders. 
+            This application also has an admin panel through which the admin can create more products, edit or delete a product, view orders and mark them deliver after being paid for and delivered to the user.`,
             stacks: ['React', 'CSS3', 'Express', 'MongoDB', 'Material UI', 'Firebase'],
             demoLink: "https://e-commerce--mern.vercel.app/",
             gitHubLink: "https://github.com/micdev123/e-commerce_project",
@@ -115,7 +115,7 @@ const data = {
         },
         {
             title: "HooBank Landing Page",
-            desc: `Is the next generation payment method. A landing page that gives detailed information about the application.`,
+            desc: `Is the next-generation payment method. A landing page that gives detailed information about the application.`,
             stacks: ['HTML5', 'Tailwind CSS', 'Javascript'],
             demoLink: "https://micdev123.github.io/hooBank_project/",
             gitHubLink: "https://github.com/micdev123/hooBank_project",
@@ -124,7 +124,7 @@ const data = {
 
         {
             title: "Blogging",
-            desc: `Is a full-stack web-based application where users can read, like, comment on a post, write, edit, or delete own post. It functionality is similar to other blogging platform like Hashnode, Medium, DEV, but simple in design and easy to navigate.`,
+            desc: `Is a full-stack web-based application where users can read, like, and comment on a post, write, edit, or delete their own post. Its functionality is similar to other blogging platforms like Hashnode, Medium, and DEV, but simple in design and easy to navigate.`,
             stacks: ['React', 'CSS3', 'Express', 'MongoDB', 'Material UI', 'Firebase'],
             demoLink: "https://blogging-mern.vercel.app/",
             gitHubLink: "https://github.com/micdev123/blogging_project",
