@@ -11,11 +11,16 @@
 
     .challenges {
         margin-top: 3rem;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem 20px;
 
         .challenge {
             width: 20rem;
-            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             transition: all 0.3s ease;
 
             .challenge_img {
@@ -63,10 +68,7 @@
                 width: 100%;
                 margin-left: 0;
                 margin-bottom: 2rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                
 
                 &:hover {
                     transform: none;
@@ -86,7 +88,7 @@
 
         @media screen and (max-width: 900px) {
             width: 100%;
-            flex-direction: column;
+            grid-template-columns: 1fr;
         }
         
     }

@@ -146,6 +146,18 @@ const data = {
             gitHubLink: "https://github.com/micdev123/interactive-card-details-form",
             img: `${images.interactive_card_details}`,
         },
+        {
+            title: "Interactive Comments Section",
+            demoLink: "https://micdev123.github.io/interactive-comments-section/",
+            gitHubLink: "https://github.com/micdev123/interactive-comments-section",
+            img: `${images.interactive_comments}`,
+        },
+        {
+            title: "Bookmark Landing Page",
+            demoLink: "https://micdev123.github.io/bookmark-landing-page/",
+            gitHubLink: "https://github.com/micdev123/bookmark-landing-page",
+            img: `${images.bookmark_landing}`,
+        },
         
     ]
 }
