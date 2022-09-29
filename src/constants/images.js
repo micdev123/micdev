@@ -33,10 +33,10 @@ import expenses_chart from '../assets/expenses-chart.jpg';
 import interactive_card_details from '../assets/interactive_card_details.jpg';
 import interactive_comments from '../assets/interactive_comments.jpg';
 import bookmark_landing from '../assets/bookmark_landing.jpg';
-
+import ecommerce_product_page from '../assets/ecommerce_product_page.jpg'
 
 const assets = {
     michael, about_img, html5, css3, javascript, photoshop, php, mysql,mongodb, git, firebase, react, sanity, sass, vscode, npm, command,tailwind_css, audition, adobe_xd, node, express, illustrator,e_classroom, e_commerce, blogging, construction, resort, hoobank,
-    python, qraphQL, expenses_chart, interactive_card_details,interactive_comments, bookmark_landing
+    python, qraphQL, expenses_chart, interactive_card_details,interactive_comments, bookmark_landing, ecommerce_product_page
 }
 export default assets;

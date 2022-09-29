@@ -158,6 +158,12 @@ const data = {
             gitHubLink: "https://github.com/micdev123/bookmark-landing-page",
             img: `${images.bookmark_landing}`,
         },
+        {
+            title: "E-commerce Product Page",
+            demoLink: "https://micdev123.github.io/ecommerce-product-page/",
+            gitHubLink: "https://github.com/micdev123/ecommerce-product-page",
+            img: `${images.ecommerce_product_page}`,
+        },
         
     ]
 }

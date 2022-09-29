@@ -77,6 +77,7 @@ const Works = () => {
                                     <p>CSS3</p>
                                     <p>PHP</p>
                                     <p>MySQL</p>
+                                    <p>JavaScript</p>
                                 </div>
                                 <div className='project_links'>
                                     <Link to='/comingSoon' className='link'>
@@ -94,46 +95,6 @@ const Works = () => {
                                     <div className='work_img'>
                                         <div className='overlay'></div>
                                         <img src={images.e_classroom} alt='e-classroom' className='project_img' />
-                                    </div>
-                                </Link>
-                            </div>
-                        </motion.div>
-
-                        <motion.div
-                            className='work'
-                            initial={{y: 100, opacity: 0 }}
-                            whileInView={{y: 0, opacity: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <div className='work_content'>
-                                <h2>The Resort</h2>
-                                <p>
-                                    Is a full-stack web-based application. It allows users to choose from a variety of rooms and then book a room if available, based on the duration the user specified.
-                                </p>
-                                <div className='stack'>
-                                    <p>React</p>
-                                    <p>Sass</p>
-                                    <p>Express</p>
-                                    <p>Sanity.io</p>
-                                    <p>GraphQL</p>
-                                    <p>Framer Motion</p>
-                                </div>
-                                <div className='project_links'>
-                                    <Link to='/comingSoon' className='link'>
-                                        <FiExternalLink className='icon' />
-                                    </Link>
-                                    <Link to='comingSoon' className='link'>
-                                        <AiOutlineGithub className='icon' />
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className='work_footer'>
-                                <h2 className='small_Screen'>The Resort</h2>
-                                <Link to='/comingSoon'>
-                                    <div className='work_img'>
-                                        <div className='overlay'></div>
-                                        <img src={images.resort} alt='resort' className='project_img' />
                                     </div>
                                 </Link>
                             </div>
